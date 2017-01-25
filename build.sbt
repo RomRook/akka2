@@ -6,7 +6,7 @@ gitHeadCommitSha := {
     Some(Process("git rev-parse HEAD").lines.head)
   } catch {
     case _: Exception => None
-  }
+}
 }
 
 name := "akka2"
